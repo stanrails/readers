@@ -1,13 +1,13 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-4">
-			<p class="text-left"><%= link_to "Back That Way", users_path, :class => "btn btn-default" %></p>
+			<p class="text-left"><%= link_to "See More Stories", users_path, :class => "btn btn-default" %></p>
 		</div>
 		<div class="col-lg-4">
 			<h4 class="text-center text-muted">Pushing Social</h4>
 		</div>
 		<div class="col-lg-4">
-			<h5 class="text-muted text-right">Inspired by <a href="http://www.howigotmyfirst3customers.com">Noah Kagen</a></h5>
+			 <p class="text-right"><%= link_to "Tell Your Story", new_user_path, :class => "btn btn-primary" %></p>
 		</div>
 	</div>
 </div>
@@ -22,8 +22,8 @@
 <div class="container">
 	<div class="row">
 	<div class="col-lg-3">
-		<p class="text-center"><%= image_tag @user.avatar.url(:thumb) %></p>
-		<p class="text-center text-info"><small><%= @user.nickname %></small></p>
+		<p class="text-right"><%= image_tag @user.avatar.url(:thumb) %></p>
+		<p class="text-right text-info"><small><%= @user.nickname %><%= @user.id %></small></p>
 	</div>
 
 
@@ -38,7 +38,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			<h4 class="pull-right" style="vertical-align:middle">Insight</h4>
+			<h4 class="text-right">Insight</h4>
+			<p class="text-right"><small>Share the love</small></p>
 		</div>
 		<div class="col-lg-9">
 			<div class="tweetable">
@@ -56,8 +57,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			<h4 class="pull-right" style="vertical-align:middle">Build a Better Blog</h4>
-			<p class="text-center"><small>We'll give you what you need</small></p>
+			<h4 class="text-right" style="vertical-align:middle">Build a Better Blog</h4>
+			<p class="text-right"><small>We'll give you what you need</small></p>
 		</div>
 		<div class="col-lg-9">
 			<div class="tweetable">
@@ -72,5 +73,6 @@
 	<div class="row">
 		<br>	
 		<h5 class="text-center text-muted">Another Marketing Gadget for the Little Guy</h5>
+		<h5 class="text-muted text-center">Inspired by <a href="http://www.howigotmyfirst3customers.com">Noah Kagen</a></h5>
 	</div>
 </div>
