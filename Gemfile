@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'simple_form'
-gem "rails_admin", git: "git@github.com:bulleric/rails_admin.git", branch: "bootstrap2-dependency-patch"
+#gem "rails_admin", git: "git@github.com:bulleric/rails_admin.git", branch: "bootstrap2-dependency-patch"
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
