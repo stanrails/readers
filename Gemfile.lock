@@ -1,14 +1,10 @@
 GIT
-  remote: git://github.com/heroku/rails3_serve_static_assets.git
-  revision: 84910ceb4ca2851d650e66d3b22f5008acf253f8
+  remote: git://github.com/thomas-mcdonald/bootstrap-sass.git
+  revision: 9c6c07f74ff515cf38380b014cfede14a4f0eae4
+  branch: 3
   specs:
-    rails3_serve_static_assets (0.0.1)
-
-GIT
-  remote: git://github.com/heroku/rails_log_stdout.git
-  revision: 01b5bcc572e3baed1618f4068920dd83bd491fb2
-  specs:
-    rails_log_stdout (0.0.1)
+    bootstrap-sass (3.0.0.0)
+      sass (~> 3.2)
 
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
@@ -50,8 +46,6 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.1.1)
-    bootstrap-sass (3.0.1.0.rc)
-      sass (~> 3.2)
     builder (3.1.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -154,7 +148,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (~> 3.0.1.0.rc)
+  bootstrap-sass!
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 1.2)
@@ -162,9 +156,7 @@ DEPENDENCIES
   paperclip!
   pg
   rails (= 4.0.0)
-  rails3_serve_static_assets!
   rails_12factor
-  rails_log_stdout!
   sass-rails (~> 4.0.0)
   sdoc
   simple_form
