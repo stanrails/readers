@@ -48,7 +48,12 @@
 			<br>
 			<div class="well">
 				<h4 class="text-muted">Get All These Tips At Once</h4>
-				<p>We've gathered all of these stories into one easy to read (and stylish) PDF download</p>
+				<p>We've gathered all of these stories into one easy to read (and stylish) PDF download
+				</p>
+					<%= form_tag url_for(:controller => 'users', :action => 'alltips', :id => @user.id), :method => 'get' do %>
+					  <%= text_field_tag "account", "enter your email address" %>
+					  <%= submit_tag "Save" %>
+					<% end %>
 			</div>
 		</div>
 	</div>

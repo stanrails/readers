@@ -21,6 +21,13 @@ class UsersController < ApplicationController
 	  @user = User.find(params[:id])
 	end
 
+	def alltips
+		@user = User.first
+		# send contact info to infusionsoft
+		Infusionsoft.contact_add({:FirstName => @user.name,  :Email => @user.email })
+		redirect_to("/thankyou")
+	end
+
 	private
 	 def user_params
 	 params.require(:user).permit(:name, :email, :story, :type, :tweetable, :avatar, :nickname)

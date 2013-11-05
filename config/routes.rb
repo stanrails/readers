@@ -6,6 +6,9 @@ resources :users
 
  root "users#index"
  get "story" => "pages#story"
+ get "alltips" => "users#alltips"
+ get "thankyou" => "pages#thankyou"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
