@@ -15,7 +15,7 @@ gem "devise"
 gem "infusionsoft"
 gem 'aws-sdk', '~> 1.5.7'
 gem "rails_admin", git: "https://github.com/bulleric/rails_admin.git", branch: "bootstrap2-dependency-patch"
-
+gem 'gravatar-ultimate'
 
 group :development, :test do
      gem 'sqlite3'
