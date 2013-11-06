@@ -22,8 +22,8 @@
 <div class="container">
 	<div class="row">
 	<div class="col-lg-3">
-		<p class="text-right"><%= image_tag @user.avatar.url(:thumb) %></p>
-		<p class="text-right text-info"><small><%= @user.nickname %></small></p>
+		<p class="text-right"><%= image_tag @user.avatar.url(:medium), :class => "img-rounded" %></p>
+		<p class="text-right text-info"><em><%= @user.nickname %></em</p>
 	</div>
 
 
@@ -47,12 +47,12 @@
 			</div>
 			<br>
 			<div class="well">
-				<h4 class="text-muted">Get All These Tips At Once</h4>
+				<h4 class="text-muted text-info">Get All These Awesome Stories</h4>
 				<p>We've gathered all of these stories into one easy to read (and stylish) PDF download
 				</p>
 					<%= form_tag url_for(:controller => 'users', :action => 'alltips', :id => @user.id), :method => 'get' do %>
-					  <%= text_field_tag "account", "enter your email address" %>
-					  <%= submit_tag "Save" %>
+					  <p><%= text_field_tag "account", "What is your email address?", :class => 'form-control' %></p>
+					  <%= submit_tag "Save", :class => 'btn btn-default' %>
 					<% end %>
 			</div>
 		</div>
