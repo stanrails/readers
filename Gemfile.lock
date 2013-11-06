@@ -17,7 +17,7 @@ GIT
       mime-types
 
 GIT
-  remote: git@github.com:bulleric/rails_admin.git
+  remote: https://github.com/bulleric/rails_admin.git
   revision: 7272394a81bccf940b2175820921f98627bbda29
   branch: bootstrap2-dependency-patch
   specs:
