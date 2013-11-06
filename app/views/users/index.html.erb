@@ -23,7 +23,7 @@
   <% @users.each do |user| %>
     <div class="col-lg-3">
       
-      <p class="text-center"><%= link_to (image_tag user.avatar.url(:medium), :class => 'img-rounded'), user_path(user) %></p>
+      <p class="text-center"><%= link_to (image_tag user.avatar.url(:medium)), user_path(user) %></p>
       <p class="text-center"><%= user.name %></p>
       <p class="text-center text-info"><small><%= user.nickname %></small></p>
     </div>

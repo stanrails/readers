@@ -22,7 +22,7 @@
 <div class="container">
 	<div class="row">
 	<div class="col-lg-3">
-		<p class="text-right"><%= image_tag @user.avatar.url(:medium), :class => "img-rounded" %></p>
+		<p class="text-right"><%= image_tag @user.avatar.url(:medium) %></p>
 		<p class="text-right text-info"><em><%= @user.nickname %></em</p>
 	</div>
 
@@ -52,7 +52,7 @@
 				</p>
 					<%= form_tag url_for(:controller => 'users', :action => 'alltips', :id => @user.id), :method => 'get' do %>
 					  <p><%= text_field_tag "account", "What is your email address?", :class => 'form-control' %></p>
-					  <%= submit_tag "Save", :class => 'btn btn-default' %>
+					  <%= submit_tag "Get the stories", :class => 'btn btn-primary' %>
 					<% end %>
 			</div>
 		</div>
@@ -68,7 +68,7 @@
 		<div class="col-lg-9">
 			<div class="tweetable">
 				<p>We've created smart and affordable ways to do more with your blog</p>
-				<a href="http://www.pushingsocial.com/services" class="btn btn-primary">Learn More</a>
+				<a href="http://www.pushingsocial.com/services" class="btn btn-success">Learn More</a>
 			</div>
 		</div>
 	</div>
