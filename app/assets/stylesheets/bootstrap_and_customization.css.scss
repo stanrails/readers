@@ -33,6 +33,16 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.container-wide {
+ width: 910px;
+}
+
+.row2 {
+margin-right: -15px;
+margin-left: -173px;
+width: 1000px;
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
