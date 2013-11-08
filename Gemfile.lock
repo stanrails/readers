@@ -99,6 +99,8 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.4)
+    encrypted_id (1.1.1)
+      activerecord (>= 3.0.0)
     erubis (2.7.0)
     execjs (2.0.2)
     factory_girl (4.3.0)
@@ -264,6 +266,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   devise
+  encrypted_id
   factory_girl_rails (~> 4.0)
   gravatar-ultimate
   guard-rspec
