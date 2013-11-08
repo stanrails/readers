@@ -1,4 +1,3 @@
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 /* Space out content a bit */
 body {
@@ -41,6 +40,11 @@ body {
 margin-right: -15px;
 margin-left: -173px;
 width: 1000px;
+}
+
+.col-lg-3a {
+width: 25%;
+padding-bottom: 30px;
 }
 
 /* Customize container */
@@ -111,3 +115,5 @@ width: 1000px;
     border-bottom: 0;
   }
 }	
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");

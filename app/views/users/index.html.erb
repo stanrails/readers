@@ -6,7 +6,7 @@
 			<h4 class="text-center text-muted">Pushing Social</h4>
 		</div>
 		<div class="col-lg-4">
-			<p class="text-right"><%= link_to "Tell Your Story", new_user_path, :class => "btn btn-primary" %></p>
+			
 		</div>
 	</div>
 </div>
@@ -14,7 +14,8 @@
 	<div class="col-lg-12">
 		<h1 class="lead text-center">How I Got My First 100 Blog Readers</h1>
 		<p class="text-center lead">Share how you hustled to get your first blog readers.</p>
-		
+		<p class="text-center"><%= link_to "Tell Your Story", new_user_path, :class => "btn btn-primary btn-lg" %></p>
+		<hr>
 	</div>
 	<br>
 </div>
@@ -26,8 +27,8 @@
     <div class="col-lg-3">
       
       <p class="text-center"><%= link_to (image_tag user.avatar.url(:medium)), user_path(user) %></p>
-      <p class="text-center"><%= user.name %></p>
-      <p class="text-center text-info"><small><%= user.nickname %></small></p>
+      <p class="text-center"><strong><%= user.name %></strong></p>
+      <p class="text-center text-info" style="padding-bottom:20px;"><small><%= user.nickname %></small></p>
     </div>
   <% end %>
 </div>
