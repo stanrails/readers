@@ -7,12 +7,13 @@ RailsAdmin.config do |config|
   ################  Global configuration  ################
 
   # Set the admin name here (optional second array element will appear in red). For example:
-  config.main_app_name = ['First100readers', 'Admin']
+  config.main_app_name = ['First 100 Readers', 'Admin']
   # or for a more dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
 
   # RailsAdmin may need a way to know who the current user is]
   config.current_user_method { current_admin } # auto-generated
+  config.default_items_per_page = 50
 
   # If you want to track changes on your models:
   # config.audit_with :history, 'Admin'
@@ -38,6 +39,19 @@ RailsAdmin.config do |config|
 
   ################  Model configuration  ################
 
+
+
+config.model User do
+    list do
+      field :name
+      field :email
+      field :approval do
+        label "Approved"
+      end
+      field :created_at
+    end
+  end
+
   # Each model configuration can alternatively:
   #   - stay here in a `config.model 'ModelName' do ... end` block
   #   - go in the model definition file in a `rails_admin do ... end` block
@@ -59,8 +73,6 @@ RailsAdmin.config do |config|
   #   # You can copy this to a 'rails_admin do ... end' block inside your admin.rb model definition
 
   #   # Found associations:
-
-
 
   #   # Found columns:
 
@@ -119,7 +131,8 @@ RailsAdmin.config do |config|
 
   #     configure :id, :integer 
   #     configure :name, :string 
-  #     configure :email, :string 
+  #     configure :email, :string
+  #     configure :approval, :string 
   #     configure :story, :text 
   #     configure :type, :string 
   #     configure :created_at, :datetime 
@@ -155,6 +168,6 @@ RailsAdmin.config do |config|
   #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
   #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
   #     # using `field` instead of `configure` will exclude all other fields and force the ordering
-  # end
+  
 
 end

@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
+		  @user.approval='n'
 		  # Deliver the signup email
 	      Notifier.send_signup_email(@user).deliver
 	      redirect_to @user
@@ -38,7 +39,7 @@ class UsersController < ApplicationController
 
 	private
 	 def user_params
-	 params.require(:user).permit(:name, :email, :story, :type, :tweetable, :avatar, :nickname)
+	 params.require(:user).permit(:name, :email, :story, :approval, :type, :tweetable, :avatar, :nickname)
 	 end
 
 end
