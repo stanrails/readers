@@ -6,4 +6,8 @@ class Notifier < ActionMailer::Base
     @user = user
     mail( :to => @user.email, :subject => 'Thanks for sharing your story' )
   end
+  def send_alert_email(user)
+    @user = user
+    mail( :to => 'stansmith@pushingsocial.com', :subject => 'New Story' )
+  end
 end

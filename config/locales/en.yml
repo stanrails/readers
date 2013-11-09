@@ -21,3 +21,14 @@
 
 en:
   hello: "Hello world"
+
+  activerecord:
+    attributes:
+      user:
+        avatar: "Your photo"
+    errors:
+      models:
+        user:
+          attributes:
+            avatar:
+              blank: "is required"

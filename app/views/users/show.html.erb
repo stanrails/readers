@@ -15,6 +15,9 @@
 	<div class="col-lg-12">
 	<h1 class="lead text-center text-info"><%= @user.name %> | <%= @user.type.titleize %></h1>
 	<p class="text-center lead">How I attracted my first 100 blog readers.</p>
+		<% if flash[:notice] %>
+		    <div class="alert alert-success"><%= flash[:notice] %></div>
+		<% end %>
 	
 	</div>
 	<br>
