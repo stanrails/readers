@@ -18,9 +18,6 @@ gem "rails_admin", git: "https://github.com/bulleric/rails_admin.git", branch: "
 gem 'gravatar-ultimate'
 gem 'encrypted_id'
 
-
-
-
 gem "rspec-rails", :group => [:test, :development]
 group :test do
   gem "factory_girl_rails", "~> 4.0"
@@ -30,6 +27,9 @@ end
 
 group :development, :test do
      gem 'sqlite3'
+     gem 'better_errors'
+     gem 'binding_of_caller'
+     gem 'meta_request'
 end
 
 group :production do
