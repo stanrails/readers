@@ -2,6 +2,21 @@
 <html>
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "EmailMessage",
+  "description": "$5 meal at Joe's Diner",
+  "action": {
+    "@type": "SaveAction",
+    "name": "Save Offer",
+    "handler": {
+      "@type": "HttpActionHandler",
+      "url": "https://offers-everywhere.com/save?offerId=xyz789"
+    }
+  }
+}
+</script>
   </head>
   <body>
     <h1>Great story, <%= @user.name %>!</h1>
