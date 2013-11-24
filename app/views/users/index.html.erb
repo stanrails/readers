@@ -26,7 +26,7 @@
   <% @users.each do |user| %>
 	<% if user.approval=='y' %>
     <div class="col-lg-3">    
-      <p class="text-center"><%= link_to (image_tag user.avatar.url(:medium)), user_path(user) %></p>
+      <p class="text-center"><%= link_to (image_tag user.avatar.url(:medium), :class=>"img-circle"), user_path(user) %></p>
       <p class="text-center"><strong><%= user.name %></strong></p>
       <p class="text-center text-info" style="padding-bottom:20px;"><small><%= user.nickname %></small></p>
     </div>
